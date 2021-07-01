@@ -17,7 +17,7 @@ class TestScreen(GridLayout):
 class TestApp(App):
 
     def build(self):
-        video = Video(source='test.mp4',state='play',options = {'eos': 'loop'})
+        video = Video(source='pong.mp4',state='play',options = {'eos': 'loop'})
         #video.allow_stretch=True
         return video
         #return TestScreen()
