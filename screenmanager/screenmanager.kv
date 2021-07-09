@@ -1,4 +1,4 @@
-#:import CardTransition kivy.uix.screenmanager.CardTransition
+#:import FadeTransition kivy.uix.screenmanager.FadeTransition
 <Screen1>:
     canvas:
         Color:
@@ -64,7 +64,7 @@ TestContainer:
     karen: karen
     ScreenManager:
         id: karen
-        transition: CardTransition(duration = 1)
+        transition: FadeTransition(duration = 0.5)
         Screen1:
             id: screen1
             name: 'screen1'
