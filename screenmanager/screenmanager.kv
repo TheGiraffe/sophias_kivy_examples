@@ -1,0 +1,75 @@
+<Screen1>:
+    canvas:
+        Color:
+            rgba: 50/255, 1, 100/255,1
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [25, 25, 25, 25]
+    Label:
+        text: "Screen 1"
+<Screen2>:
+    canvas:
+        Color:
+            rgba: 50/255, 1, 125/255,1
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [25, 25, 25, 25]
+    Label:
+        text: "Screen 2"
+<Screen3>:
+    canvas:
+        Color:
+            rgba: 50/255, 1, 150/255,1
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [25, 25, 25, 25]
+    Label:
+        text: "Screen 3"
+<Screen4>:
+    canvas:
+        Color:
+            rgba: 50/255, 1, 175/255,1
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [25, 25, 25, 25]
+    Label:
+        text: "Screen 4"
+<Screen5>:
+    canvas:
+        Color:
+            rgba: 50/255, 1, 200/255,1
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [25, 25, 25, 25]
+    Label:
+        text: "Screen 5"
+TestContainer:
+<TestContainer>:
+    karen: karen
+    ScreenManager:
+        id: karen
+        Screen1:
+            id: screen1
+            name: 'screen1'
+            manager: 'karen'
+        Screen2:
+            id: screen2
+            name: 'screen2'
+            manager: 'karen'
+        Screen3:
+            id: screen3
+            name: 'screen3'
+            manager: 'karen'
+        Screen4:
+            id: screen4
+            name: 'screen4'
+            manager: 'karen'
+        Screen5:
+            id: screen5
+            name: 'screen5'
+            manager: 'karen'
