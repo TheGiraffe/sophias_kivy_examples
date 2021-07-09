@@ -16,6 +16,8 @@ class Screen4(Screen):
     pass
 class Screen5(Screen):
     pass
+class Screen6(Screen):
+    pass
 
 class TestContainer(FloatLayout):
     karen = ScreenManager()
@@ -34,7 +36,7 @@ class TestContainer(FloatLayout):
 
     def _on_keyboard_down(self, keyboard, keycode, text, modifiers):
         if keycode[1] == 'right':
-            if self.screen < 5:
+            if self.screen < 6:
                 self.screen+=1
             else:
                 self.screen = 1
@@ -43,7 +45,7 @@ class TestContainer(FloatLayout):
             if self.screen > 1:
                 self.screen-=1
             else:
-                self.screen = 5
+                self.screen = 6
             self.speak_to_the_manager()
         return True
 

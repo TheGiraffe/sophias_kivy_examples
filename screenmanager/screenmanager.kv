@@ -1,7 +1,8 @@
+#:import CardTransition kivy.uix.screenmanager.CardTransition
 <Screen1>:
     canvas:
         Color:
-            rgba: 50/255, 1, 100/255,1
+            rgba: 200/255, 50/255,50/255,1
         RoundedRectangle:
             size: self.size
             pos: self.pos
@@ -11,7 +12,7 @@
 <Screen2>:
     canvas:
         Color:
-            rgba: 50/255, 1, 125/255,1
+            rgba: 200/255, 100/255, 50/255,1
         RoundedRectangle:
             size: self.size
             pos: self.pos
@@ -21,7 +22,7 @@
 <Screen3>:
     canvas:
         Color:
-            rgba: 50/255, 1, 150/255,1
+            rgba: 200/255, 200/255, 50/255,1
         RoundedRectangle:
             size: self.size
             pos: self.pos
@@ -31,7 +32,7 @@
 <Screen4>:
     canvas:
         Color:
-            rgba: 50/255, 1, 175/255,1
+            rgba: 50/255, 200/255, 50/255,1
         RoundedRectangle:
             size: self.size
             pos: self.pos
@@ -41,18 +42,29 @@
 <Screen5>:
     canvas:
         Color:
-            rgba: 50/255, 1, 200/255,1
+            rgba: 50/255, 100/255, 200/255,1
         RoundedRectangle:
             size: self.size
             pos: self.pos
             radius: [25, 25, 25, 25]
     Label:
         text: "Screen 5"
+<Screen6>:
+    canvas:
+        Color:
+            rgba: 100/255, 50/255, 200/255,1
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [25, 25, 25, 25]
+    Label:
+        text: "Screen 6"
 TestContainer:
 <TestContainer>:
     karen: karen
     ScreenManager:
         id: karen
+        transition: CardTransition(duration = 1)
         Screen1:
             id: screen1
             name: 'screen1'
@@ -72,4 +84,8 @@ TestContainer:
         Screen5:
             id: screen5
             name: 'screen5'
+            manager: 'karen'
+        Screen6:
+            id: screen6
+            name: 'screen6'
             manager: 'karen'
